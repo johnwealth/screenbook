@@ -1,0 +1,64 @@
+body{direction:rtl}
+img{float:right;}
+.topbar:before{left:auto;right:100%;}
+.topbar:after{border-left:0 none;border-right:50px solid transparent;left:auto;right:-49px;}
+.header-search{float:left;}
+nav{float:right;}
+.header-search form{	right:auto;	left:0;}
+.menubar nav > ul > li{	float:right;}
+img{float:right;}
+.topbar:before{left:auto;right:100%;}
+.topbar:after{border-left:0 none;border-right:50px solid transparent;left:auto;right:-49px;}
+.header-search{float:left;}
+nav{float:right;}
+.header-search form{left:0;right:auto;}
+.menubar nav > ul > li{float:right;}
+.topbar span{float:right;margin-left:80px;margin-right:0;}
+.topbar span.socials{margin:0 15px 0 0;}
+.registration{float:left;}
+.topbar{padding:15px 100px 15px 0;}
+.counter-inner{padding-left:0;padding-right:30px;}
+.prog-detail{padding-left:0;padding-right:20px;}
+.owl-carousel{direction:ltr}
+.owl-item{direction:rtl}
+.widget .about-widget li span{float:right;margin-left:20px;margin-right:0;}
+ul li:before{left:auto;right:-20px;}
+.widget li i.fa{float:right;margin-left:12px;margin-right:0;}
+.registration a{border-left:0 none;border-right:1px solid #7f7f7f;margin-left:0;margin-right:10px;padding-left:0;padding-right:10px;}
+.registration a:last-child{border-right:0 none}
+.easyedu-services.style2 .edu-service img{float:right;margin:0 0 0 20px;}
+.easyedu-services.style2 .edu-service{text-align:right}
+.options li a:before{left:auto;right:0;}
+.options li a.selected:before{left:auto;right:20px;}
+.connected strong{float:right;margin-left:15px;margin-right:0;}
+.connected a{float:right;}
+.event-date{float:right;padding-left:35px;padding-right:0;}
+.event-detail{padding:20px 60px 20px 160px;}
+.event-btn{left:-10px;right:auto;}
+nav > ul ul ul{right:100%;}
+.edu-search > button{left:0;right:auto;text-align:center;}
+.pagination li a img{	transform:rotate(180deg);}
+blockquote:before{content:"\f10e";left:auto;right:65px;}
+.author-detail:before{	right:auto;	left:0;}
+.comment-detail:before{	right:auto;	left:0;}
+.comment-name > strong{float:right;margin-left:50px;margin-right:0;}
+.comment-name > i{float:right;}
+.edu-comments ul ul{padding:0 170px 0 0;}
+.post-inner{padding-left:0;padding-right:20px;}
+.sidebar .widget li a{float:right}
+.post-inner{padding-left:0;padding-right:20px;}
+.sidebar .widget li a{float:right;}
+.sidebar .widget li:after{left:auto;right:0;}
+.sidebar .widget li{padding:8px 18px 8px 0;}
+.tagcloud > a{float:right;margin-left:3px;margin-right:0;}
+.touch ul li p{padding:0 20px 0 40px;}
+.course-info > span{float:right;margin-left:50px;margin-right:0;}
+.course-teacher > strong, .event-org > strong{padding-left:0;padding-right:20px;}
+.review > strong{float:right;margin-left:10px;margin-right:0;}
+.review i{float:right;}
+.toggle-item > h2:before{left:auto;right:35px;}
+.toggle-item > h2{padding:25px 100px 25px 10px}
+.form-block form input{text-align:right}
+.search-result ~ .edu-blog.list{padding-left:100px;padding-right:0;}
+.member-intro-description{padding-left:100px;padding-right:0;}
+.member-intro .connected{float:right;}
