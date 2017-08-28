@@ -1,6 +1,5 @@
 @extends('layouts.app')
 @section('title', 'Register')
-@include('partials.common-header')
 @section('content')
 
 <section>
@@ -78,4 +77,4 @@
 		</section>		
 
 @endsection
-@include('partials.common-footer')
+

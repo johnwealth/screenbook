@@ -194,11 +194,7 @@ section{
 }
 .fixed-bg.stop{background-attachment:unset!important;}
 .bg1{background-image:url('images/banner.jpg')}
-.bg2{background-image:url('images/banner.jpg')}
-.bg3{background-image:url('images/banner.jpg')}
-.bg4{background-image:url('images/banner.jpg')}
-.bg5{background-image:url('images/banner.jpg')}
-.bg6{background-image:url('images/banner.jpg')}
+
 
 iframe{
     width:100%;
@@ -2077,7 +2073,7 @@ blockquote:before{
     text-align:center;
     text-transform:uppercase;
     top:130px;
-    width:75%;
+    width:100%;
     -webkit-border-radius:20px;
     -moz-border-radius:20px;
     -ms-border-radius:20px;
@@ -2540,6 +2536,7 @@ blockquote:before{
     font-weight:700;
     line-height:unset;
     margin-bottom:30px;
+    
 }
 .touch{
   float:left;
@@ -2586,17 +2583,21 @@ blockquote:before{
 .contact-form{
     float:left;
     width:100%;
+    background: #000;
+    opacity: 0.9; 
+    padding: 1em;  
 }
 .contact-form input, .contact-form textarea{
     margin-bottom:20px;
     font-family:arimo;
     font-size:12px;
-    color:#374953;
+    color:#39A9d7;
 }
 .contact-form textarea{min-height:220px}
 .full-btn.button{
     width:100%;
     font-size:14px;
+
 }
 .fancy-map{
   float:left;
@@ -2860,7 +2861,7 @@ blockquote:before{
 /*=============== Registration Page ===================*/
 .registration-page {
     float: left;
-    padding: 0 170px;
+    padding: 0 100px;
     width: 100%;
 }
 .reg-form-wrapper {
@@ -2959,8 +2960,8 @@ blockquote:before{
 footer{
     float:left;
     width:100%;
-    padding:100px 0;
-    background:url(../images/pattern.jpg) repeat scroll 0 0 transparent;
+    padding:20px 0;
+    background:#0b1728;
 }
 .widget{
     float:left;
@@ -3099,8 +3100,8 @@ footer{
 .bottom-footer{
     float:left;
     width:100%;
-    background:#07080a;
-    padding:40px 0;
+    background:#07070a;
+    padding:15px 0;
 }
 .bottom-footer p{
     float:left;

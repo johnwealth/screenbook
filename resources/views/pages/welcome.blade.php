@@ -1,6 +1,5 @@
 @extends('layouts.app')
 @section('title', 'Home')
-@include('partials.common-header')
 @section('content')
 		
 			<div class="block no-padding">
@@ -59,7 +58,7 @@
 											data-width="['auto','auto','auto','auto']"
 											data-height="['auto','auto','auto','auto']"
 											data-transform_idle="o:1;" 
-											data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power3.easeInOut;
+											data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power3.easeInOut;"
 											data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" 
 											data-mask_in="x:0px;y:[100%];s:inherit;e:inherit;"
 											data-start="2200"
@@ -216,7 +215,7 @@
 															App Features
 														</a>
 													</div>
-													<div id="collapseOne" class="accordion-body collapse in">
+													<div id="collapseOne" class="accordion-body collapse ">
 														<div class="accordion-inner">
 															<p>Practice on the go!</p>
 															<i>even as you sit on the toilet slab.</i>
@@ -233,6 +232,9 @@
 														</div>
 													</div>
 												</div>
+												<div class="button-set">
+								                   <a class="button active" href="#" title="">Try It for Free</a>
+							                  </div>
 											</div>
 										</div>
 									</div>
@@ -245,11 +247,11 @@
 										<div class="accordion" id="accordion2">
 												<div class="accordion-group">
 													<div class="accordion-heading">
-													  <button class="btn btn-inverse" class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
+													  <button class="btn btn-success" class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
 															App Features
 														</a>
 													</div>
-													<div id="collapseTwo" class="accordion-body collapse in">
+													<div id="collapseTwo" class="accordion-body collapse ">
 														<div class="accordion-inner">
 															 <p>Prep at ease</p>
 																<i>leaning at your figer tips everywhere.</i>
@@ -266,7 +268,9 @@
 														</div>
 													</div>
 												</div>
-											</div>
+											<div class="button-set">
+								           <a class="button " href="#" title="">Try It for Free</a>
+							             </div>
 										</div>
 									</div>
 							</div><!-- Edu Services -->
@@ -379,71 +383,7 @@
 			</div>
 		</section>
 
-		<section>
-			<div class="block remove-gap">
-				<div class="container">
-					<div class="row">
-						<div class="col-md-12">
-							<div class="title">
-								<h2> Tips & News</h2>
-								<span>Hot News On The Spot</span>
-								<p>Get the Latest news on Tertiary institution in Nigeria .</p>
-							</div>
-
-							<div class="edu-blog">
-								<div class="row">
-									<div class="col-md-4">
-										<div class="edu-post">
-											<div class="post-img"><img src="http://placehold.it/370x250" alt="" /></div>
-											<div class="post-detail">
-												<span>02 November 2016</span>
-												<h3><a href="blog-details.html" title="">The Surprising Reason College Tuition Is Crazy Expensive</a></h3>
-												<ul class="meta">
-													<li><a href="#" title="">03 Comment</a></li>
-													<li>By: Addam Smith</li>
-												</ul>
-												<p>Estibulum orci felis, ullamcorper non condimentum ultrices ac nunc. Mauris non ligula suscipit, vulputa mi accumsan, dapibus felis. </p>
-											</div>
-										</div><!-- Edu Post -->
-									</div>
-									<div class="col-md-4">
-										<div class="edu-post">
-											<div class="post-img"><img src="http://placehold.it/370x250" alt="" /></div>
-											<div class="post-detail">
-												<span>02 November 2016</span>
-												<h3><a href="blog-details.html" title="">Atiam Ornare Condimentum Massa Sceleri Sque</a></h3>
-												<ul class="meta">
-													<li><a href="#" title="">03 Comment</a></li>
-													<li>By: Addam Smith</li>
-												</ul>
-												<p>Estibulum orci felis, ullamcorper non condimentum ultrices ac nunc. Mauris non ligula suscipit, vulputa mi accumsan, dapibus felis. </p>
-											</div>
-										</div><!-- Edu Post -->
-									</div>
-									<div class="col-md-4">
-										<div class="edu-post">
-											<div class="post-img"><img src="http://placehold.it/370x250" alt="" /></div>
-											<div class="post-detail">
-												<span>02 November 2016</span>
-												<h3><a href="blog-details.html" title="">Neque porro quisquam est dolorem ipsum dolor</a></h3>
-												<ul class="meta">
-													<li><a href="#" title="">03 Comment</a></li>
-													<li>By: Addam Smith</li>
-												</ul>
-												<p>Estibulum orci felis, ullamcorper non condimentum ultrices ac nunc. Mauris non ligula suscipit, vulputa mi accumsan, dapibus felis. </p>
-											</div>
-										</div><!-- Edu Post -->
-									</div>
-								</div>
-							</div><!-- Edu Blog -->
-							<div class="button-set">
-								<a class="button active" href="blog.html" title="">View ALL POSTS</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
+		
 
 
 		<section>
@@ -466,5 +406,4 @@
 			</div>
 		</section>
 
-@include('partials.common-footer')
 @endsection

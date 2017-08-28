@@ -1,6 +1,5 @@
 @extends('layouts.app')
 @section('title', 'Contact')
-@include('partials.common-header')
 @section('content')
 
 
@@ -45,14 +44,14 @@
 
 						<div class="col-md-7">
 							<h4 class="traditional-title">CONTACT FORM</h4>
-							<form class="contact-form">
-								<div class="row">
+													<form class="contact-form"action ="{{ url('contact') }}" method ="POST"  >
+							{{ csrf_field() }}
+						
 									<div class="col-md-6">
-										<input placeholder="Full Name" type="text">
-										<input placeholder="Email Address" type="email">
-										<input placeholder="Subject" type="text">
+										<input placeholder="Email Address" name = "email" type="email">
+										<input placeholder="Subject" name ="Subject" type="text">
 									</div>
-									<div class="col-md-6"><textarea placeholder="Detail"></textarea></div>
+									<div class="col-md-6"><textarea name ="message" placeholder="Message Detail"></textarea></div>
 									<div class="col-md-12"><button class="full-btn button active">Send Message</button></div>
 								</div>
 							</form>
@@ -84,5 +83,10 @@
 			</div>
 		</section>
 
-@include('partials.common-footer')
+
 @endsection
+
+
+
+	
+

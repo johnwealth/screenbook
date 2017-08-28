@@ -1,7 +1,5 @@
 @extends('layouts.app')
 @section('title', 'Login')
-@include('partials.common-header')
-
 @section('content')
 
 <div class="pagetop">
@@ -28,6 +26,7 @@
 										<h2>LOGIN NOW</h2>
 										<p>Fill in the form below to get instant access</p>
 									 <form class="form-horizontal" method="POST" action="{{ route('login') }}">
+									 
                                         {{ csrf_field() }}
 
                                         <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
@@ -61,7 +60,6 @@
 											<a href="#" title=""><i class="fa fa-twitter"></i></a>
 										</div>
 									</div><!-- Form Block -->
-									<div class="form-block login">
 										
 									</div><!-- Form Block -->
 								</div>
@@ -71,26 +69,5 @@
 				</div>
 			</div>
 		</section>		
-
-
-		<section>
-			<div class="block gray">
-				<div class="container">
-					<div class="row">
-						<div class="col-md-12">
-							<div class="logos-carousel">
-								<a href="#" title=""><img src="http://placehold.it/145x53" alt="" /></a>
-								<a href="#" title=""><img src="http://placehold.it/145x53" alt="" /></a>
-								<a href="#" title=""><img src="http://placehold.it/145x53" alt="" /></a>
-								<a href="#" title=""><img src="http://placehold.it/145x53" alt="" /></a>
-								<a href="#" title=""><img src="http://placehold.it/145x53" alt="" /></a>
-								<a href="#" title=""><img src="http://placehold.it/145x53" alt="" /></a>
-								<a href="#" title=""><img src="http://placehold.it/145x53" alt="" /></a>
-							</div><!-- Logos Carousel -->
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
 @stop
-@include('partials.common-footer')
+
