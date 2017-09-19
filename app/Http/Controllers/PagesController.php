@@ -62,6 +62,12 @@ class PagesController extends Controller
         return view('pages.team')->withTeams($teams);
     }
 
+    public function vission()
+    {
+          
+        return view('pages.vission');
+    }
+
       public function postContact(Request $request)
     {
       $this->validate($request, [

@@ -23,11 +23,12 @@
 						<div class="col-md-12">
 							<div class="educational-staff">
 								<div class="row">
-									<div class="col-md-4">
+									<div class="col-md-12">
 									@foreach ($teams->chunk(3) as $chunk)	
 										<div class="staff">
-										@foreach($teams as $team)
-											<div class="staff-img"><img src="http://placehold.it/300x330" alt="" /></div>
+										@foreach($chunk as $team)
+										<div class="col-md-4 class="edu-post" >
+											<div class="staff-img"><img src="{{asset('images/'. $team->pict)}}" alt="" /></div>
 											<div class="staff-detail">
 												<h4><a href="team-detail.html" title=""></a>{{ $team->name }}</h4>
 												<span>{{$team->role}}</span>
@@ -38,6 +39,7 @@
 													<a href="#" title=""><i class="fa fa-linkedin"></i></a>
 												</div>
 											</div>
+										</div>
 											@endforeach
 								</div>
 								@endforeach

@@ -178,7 +178,6 @@ class PostController extends Controller
             $location = public_path('images/' . $filename);
             Image::make($image)->resize(600, 400)->save($location);
             $oldFilename = $post->image;
-
             $post->image = $filename;
 
             Storage::delete($oldFilename);

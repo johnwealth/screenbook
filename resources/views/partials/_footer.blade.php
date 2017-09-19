@@ -7,12 +7,12 @@
 						<div class="col-md-4">
 							<div class="widget">
 								<div class="about-widget">
-									<div class="widget-logo"><a href="#" title=""><img src="images/logo2.png" alt="" /></a>
+									<div class="widget-logo"><a href="#" title=""><img src="/images/logo2.png" alt="" /></a>
 									<p>Learning everywhere...</p>
 									</div>
 									
 									<ul>
-										<li><span><i class="fa fa-map-marker"></i></span> Isheri, Lagos States. </li>
+										<li><span><i class="fa fa-map-marker"></i></span> Isheri, Lagos State. </li>
 										<li><span><i class="fa fa-envelope"></i></span> Support@screenbook.ng </li>
 										<li><span><i class="fa fa-phone"></i></span> +(234) 813-6181-258 </li>
 									</ul>
@@ -27,7 +27,7 @@
 								</div>
 								<ul>
 									<li><a href="#" title=""><i class="fa fa-bookmark"></i> JAMB APP</a></li>
-									<li><a href="#" title=""><i class="fa fa-bookmark"></i> WAEC PREP</a></li>
+									<!--<li><a href="#" title=""><i class="fa fa-bookmark"></i> WAEC PREP</a></li>-->
 									<li><a href="#" title=""><i class="fa fa-bookmark"></i> EXAM HINTS</a></li>
 									<li><a href="#" title=""><i class="fa fa-bookmark"></i> FORUM</a></li>
 								</ul>

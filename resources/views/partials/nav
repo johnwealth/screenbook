@@ -1,0 +1,166 @@
+<div class="theme-layout">
+		<header>
+			<div class="container">
+				<div class="logo"><a href="index.html" title=""><img src="images/logo.png" alt="" /></a></div><!-- Logo -->
+				<div class="header-wrap">
+					<div class="topbar">
+						   <span>For Free Consultation: <i>+(234) 813-6181-258 </i></span>
+						<span>
+							Stay Connected: 
+							<span class="socials">
+								<a href="#" title=""><i class="fa fa-facebook"></i></a>
+								<a href="#" title=""><i class="fa fa-twitter"></i></a>
+								<a href="#" title=""><i class="fa fa-linkedin"></i></a>
+							</span>
+						</span>
+
+						<div class="registration">
+							            @if (Auth::guest())
+                                            <a href="{{ route('login') }}">Login</a>
+                                            <a href="{{ route('register') }}">Register</a>
+                                         @else</div>
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                                    {{ Auth::user()->name }}
+                                </a>
+					</div><!-- Top Bar -->
+
+					<div class="menubar">
+						<nav>
+							<ul>
+								<li><a href="index.html" title="">Home</a>
+									<ul>
+										
+									</ul>
+								</li>
+								<li><a href="#" title="">Pages</a>
+									<ul>
+										<li><a href="blog.html" title="">Blog</a>
+											<ul>
+												<li><a href="blog.html" title="">Blog Page</a></li>
+												<li><a href="blog-details.html" title="">Blog Detail Page</a></li>
+											</ul>
+										</li>
+										<li><a href="events.html" title="">Events</a>
+											<ul>
+												<li><a href="events.html" title="">Events Page</a></li>
+												<li><a href="event-detail.html" title="">Event Detail Page</a></li>
+											</ul>
+										</li>
+										<li><a href="team.html" title="">Team</a>
+											<ul>
+												<li><a href="team.html" title="">Team Page</a></li>
+												<li><a href="team-detail.html" title="">Team Detail Page</a></li>
+											</ul>
+										</li>
+										<li><a href="faqs.html" title="">FAQ'S Page</a></li>
+										<li><a href="404.html" title="">Error 404 Page</a></li>
+										<li><a href="search-found.html" title="">Search Found Page</a></li>
+										<li><a href="search-not-found.html" title="">Search Not Found Page</a></li>
+										<li><a href="login-registration.html" title="">Login / Registration Page</a></li>
+									</ul>
+								</li>
+								<li><a href="courses.html" title="">Courses</a>
+									<ul>
+										<li><a href="courses.html" title="">Courses Page Style 1</a></li>
+										<li><a href="courses2.html" title="">Courses Page Style 2</a></li>
+										<li><a href="course-detail.html" title="">Courses Detail</a></li>
+									</ul>
+								</li>
+								<li><a href="gallery1.html" title="">Gallery Styles</a>
+									<ul>
+										<li><a href="gallery1.html" title="">Gallery Style 1</a></li>
+										<li><a href="gallery2.html" title="">Gallery Style 2</a></li>
+										<li><a href="gallery3.html" title="">Gallery Style 3</a></li>
+									</ul>
+								</li>
+								<li><a href="about.html" title="">About Us</a></li>
+								<li><a href="contact.html" title="">Contact Us</a></li>
+							</ul>
+						</nav>
+						<div class="header-search">
+							<a class="search-btn" href="#" title=""><i class="icon-magnifier"></i></a>
+							<form>
+								<input placeholder="Enter Your Keyword and Press Enter" type="text">
+							</form>
+						</div><!-- Header Search -->
+					</div>
+				</div><!-- Header Wrap -->
+			</div>
+		</header><!-- Header -->
+
+		<div class="responsive-header">
+			<div class="topbar">
+				<span>For Free Consultation: <i>+(011) 345 6789</i></span>
+				<span>
+					Stay Connected: 
+					<span class="socials">
+						<a href="#" title=""><i class="fa fa-facebook"></i></a>
+						<a href="#" title=""><i class="fa fa-twitter"></i></a>
+						<a href="#" title=""><i class="fa fa-linkedin"></i></a>
+					</span>
+				</span>
+
+				<div class="registration">
+					<a href="login-registration.html" title="">Register</a> <a href="login-registration.html" title="">Sign in</a>
+				</div>
+			</div><!-- Top Bar -->
+		
+			<div class="responsive-logobar">
+				<div class="responsive-logo"><a href="index.html" title=""><img src="images/logo.png" alt="" /></a></div>
+				<a class="menu-button" href="#" title=""><i class="fa fa-bars"></i></a>
+			</div><!-- Responsive Logbar -->
+			<div class="responsive-menu">
+				<a class="close-menu" href="#" title=""><i class="fa fa-remove"></i></a>
+				<ul>
+					<li><a href="index.html" title="">Home</a>
+						<ul>
+							<li><a href="index.html" title="">Homepage Style 1</a></li>
+							<li><a href="index2.html" title="">Homepage Style 2</a></li>
+						</ul>
+					</li>
+					<li><a href="#" title="">Pages</a>
+						<ul>
+							<li><a href="blog.html" title="">Blog</a>
+								<ul>
+									<li><a href="blog.html" title="">Blog Page</a></li>
+									<li><a href="blog-details.html" title="">Blog Detail Page</a></li>
+								</ul>
+							</li>
+							<li><a href="events.html" title="">Events</a>
+								<ul>
+									<li><a href="events.html" title="">Events Page</a></li>
+									<li><a href="event-detail.html" title="">Event Detail Page</a></li>
+								</ul>
+							</li>
+							<li><a href="team.html" title="">Team</a>
+								<ul>
+									<li><a href="team.html" title="">Team Page</a></li>
+									<li><a href="team-detail.html" title="">Team Detail Page</a></li>
+								</ul>
+							</li>
+							<li><a href="faqs.html" title="">FAQ'S Page</a></li>
+							<li><a href="404.html" title="">Error 404 Page</a></li>
+							<li><a href="search-found.html" title="">Search Found Page</a></li>
+							<li><a href="search-not-found.html" title="">Search Not Found Page</a></li>
+							<li><a href="login-registration.html" title="">Login / Registration Page</a></li>
+						</ul>
+					</li>
+					<li><a href="courses.html" title="">Courses</a>
+						<ul>
+							<li><a href="courses.html" title="">Courses Page Style 1</a></li>
+							<li><a href="courses2.html" title="">Courses Page Style 2</a></li>
+							<li><a href="course-detail.html" title="">Courses Detail</a></li>
+						</ul>
+					</li>
+					<li><a href="gallery1.html" title="">Gallery Styles</a>
+						<ul>
+							<li><a href="gallery1.html" title="">Gallery Style 1</a></li>
+							<li><a href="gallery2.html" title="">Gallery Style 2</a></li>
+							<li><a href="gallery3.html" title="">Gallery Style 3</a></li>
+						</ul>
+					</li>
+					<li><a href="about.html" title="">About Us</a></li>
+					<li><a href="contact.html" title="">Contact Us</a></li>
+				</ul>
+			</div>			
+		</div><!-- Responsive Header -->

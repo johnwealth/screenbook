@@ -33,12 +33,10 @@
 					<div class= "col-md-4">
                           <div class="well">
 						<dl class="dl-horizontal">
-						    <dd>
 							<dt>Created At:</dt>
 							<dd>{{$post->created_at}}</dd>
 						 </dl>
 						 <dl class="dl-horizontal">
-						 	<dd>
 							<dt>Updated At:</dt>
 							<dd>{{$post->updated_at}}</dd>
 							 <hr>
@@ -46,16 +44,16 @@
 
 			
 						<div class="row">
-												<div class="col-sm-6">
+						<div class="col-sm-6">
 					        {!! Html::linkRoute('posts.show', 'Cancel', array($post->id), array('class'=>'btn btn-danger btn-block')) !!}
-												</div>
-													<div class="col-sm-6">
-													  {!! Form::open(['route'=>['posts.store', $post->id], 'method'=>'PUT']) !!}
+							</div>
+							<div class="col-sm-6">
+									{!! Form::open(['route'=>['posts.store', $post->id], 'method'=>'PUT']) !!}
 
 								    <button class="btn btn-success btn-block" type="submit">Save Changes</button>
 
 								  {!! Form::close()!!}
-												</div>
+								</div>
 							</div>
 						</div>
 					</div>

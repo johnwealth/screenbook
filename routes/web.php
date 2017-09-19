@@ -24,10 +24,10 @@ Route::group(['middleware'=> ['web']], function(){
 Route::resource('categories', 'CategoryController', ['except'=>['create']]);
 Route::resource('tags', 'TagController', ['except'=>['create']]);
 
-Route::post('commets/{post_id}', ['uses'=>'CommentsController@store', 'as'=>'comments.store']);
-Route::get('commets/{id}/edit', ['uses'=>'CommentsController@edit', 'as'=>'comments.edit']);
-Route::put('commets/{id}/', ['uses'=>'CommentsController@update', 'as'=>'comments.update']);
-Route::delete('commets/{id}', ['uses'=>'CommentsController@destroy', 'as'=>'comments.destroy']);
+Route::post('comments/{post_id}', ['uses'=>'CommentsController@store', 'as'=>'comments.store']);
+Route::get('comments/{id}/edit', ['uses'=>'CommentsController@edit', 'as'=>'comments.edit']);
+Route::put('comments/{id}/', ['uses'=>'CommentsController@update', 'as'=>'comments.update']);
+Route::delete('comments/{id}', ['uses'=>'CommentsController@destroy', 'as'=>'comments.destroy']);
 Route::get('comments/{id}/delete', ['uses'=>'CommentsController@delete', 'as'=>'comments.delete']);
 
 Route::get('blog/{slug}', ['as' => 'blog.single' , 'uses'=>'BlogController@getSingle'])->where('slug', '[\w\d\-\_]+');
@@ -38,6 +38,8 @@ Auth::routes();
 Route::get('/', 'PagesController@index')->name('welcome');
 
 Route::get('blog' , 'PagesController@blog')->name('blog');
+
+Route::get('vission' , 'PagesController@vission')->name('vission');
 
 Route::get('contact' , 'PagesController@getContact')->name('contact');
 Route::post('contact' , 'PagesController@postContact')->name('contact');

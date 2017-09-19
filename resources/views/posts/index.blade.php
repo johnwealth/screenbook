@@ -4,7 +4,7 @@
 @section('content')
 
 		<div class="pagetop">
-			<img src="images/banner.jpg" alt="" />
+			<img src="/images/banner.jpg" alt="" />
 			<div class="pagetop-inner">
 				<div class="container">
 					<h1> Blog Post</h1>

@@ -3,21 +3,21 @@
 @section('stylesheets')
 	{!! Html::style('css/parsley.css') !!}
 	{!! Html::style('css/select2.min.css') !!}
-	<!--<script src="https://cloud.tinymce.com/stable/tinymce.min.js?apiKey=k68wm0y3gwhb8et2ujmo30sr8hz35s7c21bds26dcu5lgkak"></script>
+	<script src="https://cloud.tinymce.com/stable/tinymce.min.js?apiKey=k68wm0y3gwhb8et2ujmo30sr8hz35s7c21bds26dcu5lgkak"></script>
 	<script>
 	tinymce.init({
 		selector:'textarea',
 		plugin: 'link code',
 		menubar: false
 	});
-	</script>-->
+	</script>
 @endsection
 
 @section('content')
 
 						<section>
 								<div class="pagetop">
-			<img src="images/banner.jpg" alt="" />
+			<img src="/images/banner.jpg" alt="" />
 			<div class="pagetop-inner">
 				<div class="container">
 					<h1> Blog Post</h1>

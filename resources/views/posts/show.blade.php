@@ -4,7 +4,7 @@
 
 
 		<div class="pagetop">
-			<img src= "images/banner.jpg" alt="" />
+			<img src= "/images/banner.jpg" alt="" />
 			<div class="pagetop-inner">
 				<div class="container">
 					<h1>Blog </h1>
@@ -21,7 +21,7 @@
 		<section>
 				<div class="container" style="margin-top:40px; ">
 		           <div class="row">
-		           <img src ="{{asset('images/'.$post->image)}}"/>
+		           <img src ="{{asset('/images/'.$post->image)}}"/>
 					<div class="col-md-8">
 					
 					<h1>{{ $post->title }}</h1>
@@ -34,9 +34,6 @@
 						<span class ="label label-default">{{ $tag->name }}</span>
 						@endforeach
 					</div>
-
-
-
 
 					<div class="backend-comment col-md-7 ">
 					<h3><small>Comment {{ $post->comments()->count()}} total</small></h3>
@@ -66,16 +63,13 @@
 		            </tbody>
 				   </table>
 				</div>
-
-
-
-					<div class= "col-md-3 col-md-offset-1">
+					<div class= "col-md-4">
 						<div class="well">
 						<dl class="dl-horizontal">
 						<label>Url:</label>
-						<p><a href="{{ route('blog.single', $post->slug) }}">{{ route('blog.single', $post->slug) }}</a></p>
+						<a href="{{ route('blog.single', $post->slug) }}">{{ route('blog.single', $post->slug) }}</a>
 						</dl>
-							<dl class="dl-horizontal">
+						<dl class="dl-horizontal">
 							<label>Category:</label>
 							<p>{{ $post->category->name}}</p>
                         </dl>

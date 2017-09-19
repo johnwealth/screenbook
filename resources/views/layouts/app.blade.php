@@ -10,38 +10,25 @@
 
     <title>Screenbook | @yield('title')</title>
 
- <link rel="stylesheet" type="text/css" href="{{asset('css/bootstrap.min.css')}}">
-    <link rel="stylesheet" href="{{('css/icons.css')}}">
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/style.css') }}" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="{{ asset('css/responsive.css')}}" >
-    <link rel="stylesheet" type="text/css" href="{{ asset('css/color.css')}}" >
+    @include('partials._style')
 
-        <!-- REVOLUTION STYLE SHEETS -->
-    <link rel="stylesheet" type="text/css" href="{{ asset('revolution/css/settings.css')}}">
-    <link rel="stylesheet" type="text/css" href="{{ asset('revolution/css/navigation.css')}}">	
-
-    @yield('stylesheets')   
 </head>
-    <!-- Styles -->
+    
 
 <body>
+     @include('partials._nav')
 
     <div class="app">
-	  
-           @include('partials._nav')
-       
+	   
            @include('partials._messages')
-
+      
 		   @yield('content')
-
-		 
-
-		   @include('partials._footer')
+        
     </div>
 
+		   @include('partials._footer')
 
 @include('partials._javascript')
-@yield('scripts')
+
 </body>
 </html>
